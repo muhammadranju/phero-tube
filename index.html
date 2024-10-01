@@ -16,15 +16,18 @@
     <header class="container mx-auto pt-3">
       <nav class="navbar flex justify-center items-center">
         <div class="navbar-start">
-          <img src="./image/Logo.png" class="w-48" alt="" />
+          <a href="/">
+            <img src="./image/Logo.png" class="w-48" alt="" />
+          </a>
         </div>
         <div class="navbar-center hidden lg:flex space-x-2">
           <input
             type="text"
-            placeholder="search"
+            placeholder="Search"
             class="input input-bordered w-full"
+            id="searchInput"
           />
-          <button class="btn btn-active">Search</button>
+          <button class="btn btn-active" id="searchBtn">Search</button>
         </div>
         <div class="navbar-end">
           <a class="btn bg-red-500 text-white hover:bg-red-600">Sort by View</a>
@@ -44,24 +47,29 @@
         </button>
         <button
           id="musicBtn"
-          class="btn btn-active text-white hover:bg-red-600"
+          class="btn btn-active text-black hover:bg-red-600"
         >
           Music
         </button>
         <button
           id="comedyBtn"
-          class="btn btn-active text-white hover:bg-red-600"
+          class="btn btn-active text-black hover:bg-red-600"
         >
           Comedy
         </button>
         <button
           id="drawingBtn"
-          class="btn btn-active text-white hover:bg-red-600"
+          class="btn btn-active text-black hover:bg-red-600"
         >
           Drawing
         </button>
       </section>
       <!-- tag section -->
+
+      <section
+        class="grid lg:grid-cols-4 grid-cols-1 gap-4 mt-10"
+        id="singleSection"
+      ></section>
 
       <!-- cards section -->
       <section
