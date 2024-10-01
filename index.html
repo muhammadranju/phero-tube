@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phero Tube</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="container mx-auto pt-3">
+      <nav class="navbar flex justify-center items-center">
+        <div class="navbar-start">
+          <img src="./image/Logo.png" class="w-48" alt="" />
+        </div>
+        <div class="navbar-center hidden lg:flex space-x-2">
+          <input
+            type="text"
+            placeholder="search"
+            class="input input-bordered w-full"
+          />
+          <button class="btn btn-active">Search</button>
+        </div>
+        <div class="navbar-end">
+          <a class="btn bg-red-500 text-white hover:bg-red-600">Sort by View</a>
+        </div>
+      </nav>
+    </header>
+    <main class="container mx-auto">
+      <div class="divider"></div>
+
+      <!-- tag section -->
+      <section class="flex flex-wrap justify-center items-center space-x-5">
+        <button class="btn bg-red-500 text-white hover:bg-red-600">All</button>
+        <button id="music" class="btn btn-active text-white hover:bg-red-600">
+          Music
+        </button>
+        <button class="btn btn-active text-white hover:bg-red-600">
+          Comedy
+        </button>
+        <button class="btn btn-active text-white hover:bg-red-600">
+          Drawing
+        </button>
+      </section>
+      <!-- tag section -->
+
+      <!-- cards section -->
+      <section
+        class="grid lg:grid-cols-4 grid-cols-1 gap-4 mt-10"
+        id="cartSection"
+      >
+        <!-- <div class="shadow p-5 rounded-xl relative">
+          <figure>
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+              alt="Shoes"
+              class="rounded-xl object-cover"
+            />
+          </figure>
+          <span
+            class="bg-slate-800 top-0 mt-44 right-0 mr-9 text-white pb-[3px] px-[7px] absolute rounded-lg"
+            >3hrs 56 min ago</span
+          >
+
+          <div class="flex items-center space-x-5 mt-5">
+            <img src="./image/Noha.jpg" class="rounded-full w-16 ml-3" alt="" />
+            <div class="space-y-2">
+              <h2 class="card-title">Midnight Serenade</h2>
+              <div class="flex space-x-3">
+                <span class="text-lg">Noah Walker</span>
+                <img src="./image/icon.png" class="w-6 h-6" />
+              </div>
+              <span class="text-lg">91K views</span>
+            </div>
+          </div>
+          <div class="flex justify-center mt-2">
+            <button class="btn">View Details</button>
+          </div>
+        </div> -->
+      </section>
+      <!-- cards section -->
+    </main>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
