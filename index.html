@@ -36,14 +36,28 @@
 
       <!-- tag section -->
       <section class="flex flex-wrap justify-center items-center space-x-5">
-        <button class="btn bg-red-500 text-white hover:bg-red-600">All</button>
-        <button id="music" class="btn btn-active text-white hover:bg-red-600">
+        <button
+          id="allBtn"
+          class="btn btn-active bg-red-500 text-white hover:bg-red-600"
+        >
+          All
+        </button>
+        <button
+          id="musicBtn"
+          class="btn btn-active text-white hover:bg-red-600"
+        >
           Music
         </button>
-        <button class="btn btn-active text-white hover:bg-red-600">
+        <button
+          id="comedyBtn"
+          class="btn btn-active text-white hover:bg-red-600"
+        >
           Comedy
         </button>
-        <button class="btn btn-active text-white hover:bg-red-600">
+        <button
+          id="drawingBtn"
+          class="btn btn-active text-white hover:bg-red-600"
+        >
           Drawing
         </button>
       </section>
@@ -83,6 +97,7 @@
           </div>
         </div> -->
       </section>
+      <section class="lg:mt-52 mt-32 hidden" id="cameraSection"></section>
       <!-- cards section -->
     </main>
     <script src="./js/index.js"></script>
