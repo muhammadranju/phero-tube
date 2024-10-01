@@ -69,6 +69,7 @@ searchBtn.addEventListener("click", async () => {
     } else {
       cameraSection.innerHTML = showError("Oops!! Sorry, content not found");
       cameraSection.classList.remove("hidden");
+      singleSection.innerHTML = "";
     }
   }
 
