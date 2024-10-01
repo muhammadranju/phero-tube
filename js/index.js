@@ -1,15 +1,18 @@
 const POSTS_URL = "https://openapi.programming-hero.com/api/videos/category";
+const id = (id) => document.getElementById(id);
 
-const cartSection = document.getElementById("cartSection");
-const cameraSection = document.getElementById("cameraSection");
-const searchInput = document.getElementById("searchInput");
-const singleSection = document.getElementById("singleSection");
+const cartSection = id("cartSection");
+const cameraSection = id("cameraSection");
+const searchInput = id("searchInput");
+const singleSection = id("singleSection");
 
-const allBtn = document.getElementById("allBtn");
-const musicBtn = document.getElementById("musicBtn");
-const comedyBtn = document.getElementById("comedyBtn");
-const drawingBtn = document.getElementById("drawingBtn");
-const searchBtn = document.getElementById("searchBtn");
+const allBtn = id("allBtn");
+const musicBtn = id("musicBtn");
+const comedyBtn = id("comedyBtn");
+const drawingBtn = id("drawingBtn");
+const searchBtn = id("searchBtn");
+const postDetailsBtn = id("postDetailsBtn");
+const sortByBtn = id("sortByBtn");
 
 const categoryButtons = [allBtn, musicBtn, comedyBtn, drawingBtn];
 
@@ -126,7 +129,7 @@ function showHTML(data, author) {
             </div>
           </div>
           <div class="flex justify-center mt-2">
-            <button class="btn">View Details</button>
+            <button class="btn" id="postDetailsBtn">View Details</button>
           </div>
     </div>`;
 }
@@ -140,3 +143,7 @@ function showError(title) {
     </div>
     `;
 }
+
+postDetailsBtn.addEventListener("click", () => {
+  console.log(postDetailsBtn.innerHTML);
+});
